@@ -1,8 +1,9 @@
 import { Header } from "./components/Header";
-import { Post } from "./Post";
-import "./global.css";
-import sytles from "./App.module.css";
+import { Post } from "./components/Post";
 import { Sidebar } from "./components/Sidebar";
+
+import styles from "./App.module.css";
+import "./global.css";
 //JSX = JavaScript + XML (HTML)
 
 export function App() {
@@ -10,7 +11,7 @@ export function App() {
     <div>
       <Header />
 
-      <div className={sytles.wrapper}>
+      <div className={styles.wrapper}>
         <Sidebar />
         <main>
           <Post
